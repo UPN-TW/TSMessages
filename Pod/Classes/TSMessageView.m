@@ -8,7 +8,6 @@
 
 #import "TSMessageView.h"
 #import "HexColors.h"
-#import "TSBlurView.h"
 #import "TSMessage.h"
 
 #define TSMessageViewMinimumPadding 15.0
@@ -37,14 +36,9 @@ static NSMutableDictionary *_notificationDesign;
 
 
 /** Internal properties needed to resize the view on device rotation properly */
-@property (nonatomic, strong) UILabel *titleLabel;
 
-@property (nonatomic, strong) UILabel *contentLabel;
-@property (nonatomic, strong) UIImageView *iconImageView;
 @property (nonatomic, strong) UIButton *button;
 @property (nonatomic, strong) UIView *borderView;
-@property (nonatomic, strong) UIImageView *backgroundImageView;
-@property (nonatomic, strong) TSBlurView *backgroundBlurView; // Only used in iOS 7
 
 @property (nonatomic, assign) CGFloat textSpaceLeft;
 @property (nonatomic, assign) CGFloat textSpaceRight;

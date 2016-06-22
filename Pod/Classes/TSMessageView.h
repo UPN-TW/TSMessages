@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TSMessage.h"
+#import "TSBlurView.h"
 
 #define TSMessageViewAlpha 0.95
 
@@ -44,7 +45,12 @@
 @property (nonatomic,strong) UIImage *successIcon UI_APPEARANCE_SELECTOR;
 @property (nonatomic,strong) UIImage *warningIcon UI_APPEARANCE_SELECTOR;
 
-
+/** For UI customization */
+@property (nonatomic, strong) UIImageView *backgroundImageView;
+@property (nonatomic,strong) TSBlurView *backgroundBlurView; // Only used in iOS 7
+@property (nonatomic, strong) UIImageView *iconImageView;
+@property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) UILabel *contentLabel;
 
 /** Inits the notification view. Do not call this from outside this library.
  @param title The title of the notification view

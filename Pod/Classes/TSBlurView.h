@@ -10,6 +10,7 @@
 
 @interface TSBlurView : UIView
 
+@property (nonatomic, strong) UIToolbar *toolbar;
 @property (nonatomic, strong) UIColor *blurTintColor;
 
 @end
